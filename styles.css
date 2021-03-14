@@ -16,12 +16,14 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+}
+body {
     background-color: var(--Dark-Blue-Main);
 }
-
 html {
     font-size: 62.5%;
     font-family:'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*menu*/
@@ -45,7 +47,7 @@ html {
     display: inline-block;
     justify-content: space-between;
     margin-top: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -159,3 +161,220 @@ html {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
+
+/*Productive*/
+
+.productive__img {
+    width: 100%;
+    margin: 60px 0px 30px 0px;
+}
+.productive__title {
+    font-size: 1.6rem;
+    margin: 10px 0 10px 0;
+}
+.productive__container {
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 5px;
+}
+.productive__container--action {
+    display: flex;
+    margin: 5px;
+    color: var(--Cyan);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+/* .productive__container--action a {
+    position: absolute;
+    left: 20px;
+} */
+
+/*Review*/
+
+.review {
+    display: flex;
+    flex-direction: column;
+    
+} 
+.review__quotes {
+    width: 10%;
+    height: 0 auto;
+    margin: 10px 0px -3% 5%;
+}
+.review__box {
+    display: flex;
+    flex-direction: column; 
+    width: 90%;
+    max-width: 400px;
+    height: 200px;
+    margin: 15px auto;
+    padding: 15px 15px 0px 15px;
+    background: var(--Dark-Blue-testimonial);
+    box-shadow: 7px 7px 17px 6px #111;
+    border-radius: 10px;
+}
+.review__pa p {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.3rem;
+    color: var(--White);    
+}
+.review__box--info {
+    display: flex;
+    width: 80%;
+    margin: 0px 1%;
+    justify-content: space-evenly;
+    padding: auto;
+}
+.review__box--info img {
+    width: 15%;
+    height: 75%;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.review__box--content {
+    text-align: left;
+}
+.review__box--content p {
+    font-size: 1.5rem;
+    margin: 0 0 2% 0;
+    color: var(--White);
+}
+
+/*Form*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:var(--Dark-Blue-email);
+    box-shadow: 7px 7px 17px 6px #111;
+}
+.form__content  {
+    flex-direction: column;
+    display: inline;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 15px 15px 0px 15px;
+    color: var(--White);
+}
+.form__content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.form__content p {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+.form__content--action {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+.form__content--action input  {
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.form__content--action a {
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--White);
+    font-weight: 600;
+    background-color: var(--Blue);
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    margin-top: 40px;
+    padding: 0 auto;
+    width: 100%;
+    height: 0 auto;
+    background-color: var(--Dark-Blue-Footer);
+}
+.footer__box {
+    margin: 70px 25px 0px 25px;
+    margin: 10px;
+    justify-content: space-between;
+}
+.footer__box--logo {
+    display: flex;
+    width: 60%;
+    margin: 30px 10px;
+}
+.footer__box--info {
+    display: flex;
+    flex-direction: column;
+}
+.footer__box--info p {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0px 20px;
+    padding: auto;
+    color: var(--White);
+}
+.footer__box--info img{
+    width: 5%;
+    height: 5%;
+}
+.footer__box--location {
+    height: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.footer__box--phone {
+    height: 0 auto;
+    display: flex;
+    margin: 10px;
+}
+.footer__box--email {
+    height: 0 auto;
+    display: flex;
+    margin: 10px;
+}
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+.footer__contact a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--White);
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0 auto;
+    color: var(--White);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+/* .footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    margin: 0 auto;
+} */
